@@ -1,6 +1,7 @@
 <template>
   <div class="Home">
     <div class="map" id="map"></div>
+    <div class="test">测试</div>
   </div>
 </template>
 
