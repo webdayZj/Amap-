@@ -1,7 +1,7 @@
 <template>
   <div class="Home">
     <div class="map" id="map"></div>
-    <div class="test">测试1</div>
+    <div class="test">测试12</div>
   </div>
 </template>
 
