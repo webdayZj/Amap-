@@ -45,10 +45,10 @@ http
 
       // 拉取仓库最新代码
       //github.com/webdayZj/Amap-.git
-      // git  第五次
+      // git  第刘次
       // git clone https://github.com/yeyan1996/${data.repository.name}.git ${projectDir}
       execSync(
-        `git clone git@github.com:webdayZj/${data.repository.name}.git ${projectDir}`,
+        `git clone https://github.com/webdayZj/${data.repository.name}.git ${projectDir}`,
         {
           stdio: "inherit",
         }
