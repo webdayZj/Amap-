@@ -35,9 +35,12 @@ http
   .createServer(async (req, res) => {
     console.log("receive request");
     console.log(req.url);
+    console.log(req.method);
     if (req.method === "POST" && req.url === "/") {
       const data = await resolvePost(req);
+      console.log(data);
       const projectDir = path.resolve(__dirname, `./${data.repository.name}`);
+      console.log(data.repository.name);
       deleteFolderRecursive(projectDir);
 
       // 拉取仓库最新代码
