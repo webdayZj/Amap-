@@ -45,6 +45,7 @@ http
 
       // 拉取仓库最新代码
       //github.com/webdayZj/Amap-.git
+      // git  第二次
       // git clone https://github.com/yeyan1996/${data.repository.name}.git ${projectDir}
       execSync(
         `git clone https://github.com/webdayZj/${data.repository.name}.git ${projectDir}`,
