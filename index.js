@@ -38,7 +38,7 @@ http
     console.log(req.method);
     if (req.method === "POST" && req.url === "/") {
       const data = await resolvePost(req);
-      console.log(data);
+      console.log(data.repository.name);
       const projectDir = path.resolve(__dirname, `./${data.repository.name}`);
       console.log(projectDir, "projectDir");
       deleteFolderRecursive(projectDir);
