@@ -40,7 +40,7 @@ http
       const data = await resolvePost(req);
       console.log(data);
       const projectDir = path.resolve(__dirname, `./${data.repository.name}`);
-      console.log(data.repository.name);
+      console.log(projectDir, "projectDir");
       deleteFolderRecursive(projectDir);
 
       // 拉取仓库最新代码
